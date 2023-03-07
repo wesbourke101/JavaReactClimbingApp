@@ -98,5 +98,4 @@ public class MainRoutes {
         this.climbCompleted = climbCompleted;
     }
 
-
 }
