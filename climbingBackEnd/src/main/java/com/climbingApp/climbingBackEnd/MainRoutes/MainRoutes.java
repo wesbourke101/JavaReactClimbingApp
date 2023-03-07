@@ -2,12 +2,15 @@ package com.climbingApp.climbingBackEnd.MainRoutes;
 
 import jakarta.persistence.*;
 
+import java.time.LocalDate;
+import java.util.UUID;
+
 @Entity
 @Table(name = "main_routes")
 public class MainRoutes {
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID.IDENTITY)
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private UUID id;
     private String routeName;
     private int heightOfClimb;
     private double gradeOfClimb;
@@ -16,8 +19,8 @@ public class MainRoutes {
     private int userId;
     private boolean climbCompleted;
 
-    public MainRoutes(Long id, String routeName, int heightOfClimb, double gradeOfClimb, String descriptionOfAscent, int gearId, int userId, boolean climbCompleted) {
-        this.id = id;
+    public MainRoutes(String routeName, int heightOfClimb, double gradeOfClimb, String descriptionOfAscent, int gearId, int userId, boolean climbCompleted) {
+        this.id = UUID.randomUUID();;
         this.routeName = routeName;
         this.heightOfClimb = heightOfClimb;
         this.gradeOfClimb = gradeOfClimb;
@@ -27,11 +30,15 @@ public class MainRoutes {
         this.climbCompleted = climbCompleted;
     }
 
-    public Long getId() {
+    public MainRoutes() {
+        this.id = UUID.randomUUID();
+    }
+
+    public UUID getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(UUID id) {
         this.id = id;
     }
 
