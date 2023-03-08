@@ -2,14 +2,20 @@
 
 This is the repo for both the front and back end. 
 
-# So far this is just a dev enviroment and you need to have:
+# So far this is just a dev enviroment and this project usees:
 
-MYSQL DB named: 
+MYSQL DB named: climbingDB
+MYSQL Version: 8.0.32
 Java: 17
-Springboot: 
-React: 
-Node: 
+Springboot: 3.0.4
+React: 18.2.0
+Node: v18.14.0
+
+
 
 #Start enviroments
-SpringBoot: just run the main in your ide
+
+Front-end-------------------------------
 React: npm climb
+Back-end--------------------------------
+SpringBoot: just run the main in your ide
