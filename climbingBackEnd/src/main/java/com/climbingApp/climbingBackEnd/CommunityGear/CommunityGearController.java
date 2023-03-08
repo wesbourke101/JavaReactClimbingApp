@@ -14,7 +14,8 @@ import java.util.Random;
 @RequestMapping("/api/community_gear")
 public class CommunityGearController {
 
-    private final CommunityGearService communityGearService;
+    @Autowired
+    private CommunityGearService communityGearService;
 
     @PostConstruct
     public void init() {
@@ -26,11 +27,6 @@ public class CommunityGearController {
         CommunityGear communityGear2 = communityGearService.addCommunityGear(new CommunityGear("Black Diamond C4", .75, purchaseDate, randomByte));
         CommunityGear communityGear3 = communityGearService.addCommunityGear(new CommunityGear("Black Diamond C4", .75, purchaseDate, randomByte));
         CommunityGear communityGear4 = communityGearService.addCommunityGear(new CommunityGear("Black Diamond C4", .75, purchaseDate, randomByte));
-    }
-
-    @Autowired
-    public CommunityGearController(CommunityGearService communityGearService) {
-        this.communityGearService = communityGearService;
     }
 
     @GetMapping
