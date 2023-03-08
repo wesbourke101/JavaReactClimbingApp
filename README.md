@@ -16,6 +16,6 @@ Node: v18.14.0
 #Start enviroments
 
 ##Front-end
-React: npm climb
+React: npm start
 ##Back-end
 SpringBoot: just run the main in your ide
