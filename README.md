@@ -2,7 +2,7 @@
 
 This is the repo for both the front and back end. 
 
-# So far this is just a dev enviroment and this project usees:
+# So far this is just a dev enviroment and this project uses:
 
 MYSQL DB named: climbingDB
 MYSQL Version: 8.0.32
