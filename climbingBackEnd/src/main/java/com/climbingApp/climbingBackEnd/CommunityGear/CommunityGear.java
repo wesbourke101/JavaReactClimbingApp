@@ -30,7 +30,7 @@ public class CommunityGear {
         this.id = UUID.randomUUID();;
     }
 
-    public CommunityGear(String gearName, double gearSize, LocalDateTime purchaseDate, byte communityImage, Long userId) {
+    public CommunityGear(String gearName, double gearSize, LocalDateTime purchaseDate, byte communityImage) {
         this.id = UUID.randomUUID();
         this.gearName = gearName;
         this.gearSize = gearSize;
