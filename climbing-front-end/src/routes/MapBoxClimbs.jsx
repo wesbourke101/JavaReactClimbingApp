@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
+import "./MapBoxClimbs.css";
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoid2VzYm91cmtlMTAxIiwiYSI6ImNsZjJ2eG5pbTBhcnMzem80ZjlvbGR0bGsifQ.zAKEGEHmfJndRso8HrPQsQ';
 
