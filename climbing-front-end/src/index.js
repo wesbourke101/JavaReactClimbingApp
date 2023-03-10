@@ -1,4 +1,6 @@
 import Root from "./routes/Root"
+import MapBoxClimbs from "./routes/MapBoxClimbs"
+
 import ReactRouterErrorPage from "./errorMessages/ReactRouterErrorPage";
 import React from "react";
 import ReactDOM from 'react-dom/client';
@@ -14,6 +16,11 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <MapBoxClimbs />,
+    errorElement: <ReactRouterErrorPage />,
+  },
+  {
+    path: "/testData",
     element: <Root />,
     errorElement: <ReactRouterErrorPage />,
   },

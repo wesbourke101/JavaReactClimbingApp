@@ -1,12 +1,6 @@
 {
-    "rules": {
-      "no-restricted-globals": [
-        "error",
-        {
-          "name": "confirm",
-          "message": "Use a custom modal or dialog instead of the built-in confirm dialog."
-        }
-      ]
-    }
-  }
-  
+  "plugins": ["import"],
+  "rules": {
+  "import/no-webpack-loader-syntax": "off"
+}
+}
