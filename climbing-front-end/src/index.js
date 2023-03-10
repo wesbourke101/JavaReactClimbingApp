@@ -1,6 +1,5 @@
 import Root from "./routes/Root"
 import ReactRouterErrorPage from "./errorMessages/ReactRouterErrorPage";
-import Contact from "./routes/Contact";
 import React from "react";
 import ReactDOM from 'react-dom/client';
 
@@ -17,12 +16,6 @@ const router = createBrowserRouter([
     path: "/",
     element: <Root />,
     errorElement: <ReactRouterErrorPage />,
-    children: [
-      {
-        path: "contacts/:contactId",
-        element: <Contact />,
-      },
-    ],
   },
 ]);
 
